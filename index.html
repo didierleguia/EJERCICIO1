@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ejemplo2</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <div id="contenedor">
+        <h3>1.	En una llantería se ha establecido una promoción de las llantas marca «Ponchadas», dicha promoción consiste en lo siguiente:
+            Si se compran menos de cinco llantas el precio es de $30000 cada una, de $25000 si se compran de cinco a 10 y de $20000 si se compran más de 10.
+            Obtener la cantidad de dinero que una persona tiene que pagar por cada una de las llantas que compra y la que tiene que pagar por el total de la compra.
+             </h3>
+        <div id="resultado">
+            <script>
+
+                //1. Declaracion de variables//
+                var precio,cantidad,costo_total;
+            
+                //2. Fase entrada/lectura de datos//
+                cantidad=(parseInt(prompt("Ingresar cantida de llantas que va a comprar ")))
+
+                //3. Fase del procesamiento de datos//
+                if (cantidad < 5) {
+                    precio = 30000;
+                } else {
+                    if (cantidad <= 10) {
+                        precio = 25000;
+                    } else {
+                        precio = 20000;
+                    }
+                }
+                costo_total= precio* cantidad;
+                
+                //fase final//
+                document.write("==============CONSULTA DE PROMEDIO=========="+"<br>");
+                document.write("El costo total de las llantas es: "+costo_total+"<br>");
+                document.write("El precio de las llanatas es : "+precio+"<br>");
+                document.write("la cantidad de las llantas es : "+cantidad);
+               
+                
+
+            </script>
+        </div>
+    </div>
+    
+</body>
+</html>
